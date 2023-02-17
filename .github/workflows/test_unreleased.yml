@@ -26,6 +26,13 @@ jobs:
           repository: opensearch-project/OpenSearch
           ref: ${{ matrix.entry.opensearch_ref }}
           path: opensearch
+          
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: zulu
+          java-version: 17
+          cache: gradle
 
       - name: Assemble OpenSearch
         run: |
