@@ -107,7 +107,7 @@
 
 
 		<div class="classLikeSection">
-			<b>Located at</b> <a href="source-OpenSearch.Handlers.SigV4Handler.html#15" title="Go to source code">OpenSearch/Handlers/SigV4Handler.php</a><br>
+			<b>Located at</b> <a href="source-OpenSearch.Handlers.SigV4Handler.html#16" title="Go to source code">OpenSearch/Handlers/SigV4Handler.php</a><br>
 		</div>
 
 
@@ -127,7 +127,12 @@
 			</td>
 
 			<td class="table-cell">
-				<code><a href="source-OpenSearch.Handlers.SigV4Handler.html#21-44" title="Go to source code">__construct</a>(<span>string <var>$region</var></span>, <span>callable|null <var>$credentialProvider</var> = <span class="php-kw">null</span></span>, <span>callable|null <var>$wrappedHandler</var> = <span class="php-kw">null</span></span>)</code>
+				<code><a href="source-OpenSearch.Handlers.SigV4Handler.html#22-47" title="Go to source code">__construct</a>(
+	<span>string <var>$region</var></span>,
+	<span>string <var>$service</var></span>,
+	<span>callable|null <var>$credentialProvider</var> = <span class="php-kw">null</span></span>,
+	<span>callable|null <var>$wrappedHandler</var> = <span class="php-kw">null</span></span>,
+)</code>
 
 
 	<div class="expandable-collapsedView">
@@ -143,7 +148,13 @@
 									<tr>
 										<td><var>$region</var>&nbsp;&nbsp;</td>
 										<td><p>The region of your Amazon
-Elasticsearch Service domain</p>
+OpenSearch Service domain</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$service</var>&nbsp;&nbsp;</td>
+										<td><p>The Service of your Amazon
+OpenSearch Service domain</p>
 </td>
 									</tr>
 									<tr>
@@ -180,7 +191,7 @@ Aws\Credentials\Credentials</p>
 			</td>
 
 			<td class="table-cell">
-				<code><a href="source-OpenSearch.Handlers.SigV4Handler.html#46-54" title="Go to source code">__invoke</a>(<span>array <var>$request</var></span>)</code>
+				<code><a href="source-OpenSearch.Handlers.SigV4Handler.html#49-58" title="Go to source code">__invoke</a>(<span>array <var>$request</var></span>)</code>
 
 
 
@@ -206,7 +217,7 @@ Aws\Credentials\Credentials</p>
 			</td>
 
 			<td class="table-cell">
-				<code><a href="source-OpenSearch.Handlers.SigV4Handler.html#56-63" title="Go to source code">assertDependenciesInstalled</a>(): void</code>
+				<code><a href="source-OpenSearch.Handlers.SigV4Handler.html#60-67" title="Go to source code">assertDependenciesInstalled</a>(): void</code>
 
 
 
